@@ -1,3 +1,6 @@
+# Test Circuits for Stochastic Computation
+This project contains test circuits for stochastic computation, namely the synthesizable comparators for a stochastic ADC, to be submitted with for Google SKY130 open MPW shuttle  on the Caravel SoC.
+
 # CIIC Harness  
 
 A template SoC for Google SKY130 free shuttles. It is still WIP. The current SoC architecture is given below.
