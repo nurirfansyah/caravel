@@ -16,6 +16,8 @@
 set script_dir [file dirname [file normalize [info script]]]
 
 set ::env(DESIGN_NAME) user_proj_example
+set ::env(STD_CELL_LIBRARY) sky130_fd_sc_hd
+set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
