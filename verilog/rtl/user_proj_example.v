@@ -19,6 +19,8 @@
  *
  * user_proj_example
  *
+ * Update: Added comparators within the counter module.
+ *
  * This is an example of a (trivially simple) user project,
  * showing how the user project can connect to the logic
  * analyzer, the wishbone bus, and the I/O pads.
@@ -69,7 +71,13 @@ module user_proj_example #(
     // IOs
     input  [`MPRJ_IO_PADS-1:0] io_in,
     output [`MPRJ_IO_PADS-1:0] io_out,
-    output [`MPRJ_IO_PADS-1:0] io_oeb
+    output [`MPRJ_IO_PADS-1:0] io_oeb,
+
+    // Analog (direct connection to GPIO pad---use with caution)
+    // Note that analog I/O is not available on the 7 lowest-numbered
+    // GPIO pads, and so the analog_io indexing is offset from the
+    // GPIO indexing by 7.
+    inout [`MPRJ_IO_PADS-8:0] analog_io    
 );
     wire clk;
     wire rst;
@@ -97,7 +105,7 @@ module user_proj_example #(
     assign io_oeb = {(`MPRJ_IO_PADS-1){rst}};
 
     // LA
-    assign la_data_out = {{(127-BITS){1'b0}}, count};
+    assign la_data_out = {{(127-BITS-1){1'b0}}, comp_out[0],count};
     // Assuming LA probes [63:32] are for controlling the count register  
     assign la_write = ~la_oen[63:32] & ~{BITS{valid}};
     // Assuming LA probes [65:64] are for controlling the count clk & reset  
@@ -116,6 +124,8 @@ module user_proj_example #(
         .wstrb(wstrb),
         .la_write(la_write),
         .la_input(la_data_in[63:32]),
+        .va(analog_io[9]),
+        .vb(analog_io[10]),
         .count(count)
     );
 
@@ -131,13 +141,20 @@ module counter #(
     input [BITS-1:0] wdata,
     input [BITS-1:0] la_write,
     input [BITS-1:0] la_input,
+    input va,
+    input vb,
     output ready,
     output [BITS-1:0] rdata,
-    output [BITS-1:0] count
+    output [BITS-1:0] count,
+    output comparator_out
 );
     reg ready;
     reg [BITS-1:0] count;
     reg [BITS-1:0] rdata;
+    // Addition for comparators
+    reg[127:0] comp_out;
+
+    assign comparator_out = comp_out[0];
 
     always @(posedge clk) begin
         if (reset) begin
@@ -168,5 +185,29 @@ module counter #(
         end
     endgenerate
 
+    genvar j;
+    generate 
+        for(j=0; j<128; j=j+1) begin
+            synthcomp compara(clk, va, vb, comp_out[j]);
+        end
+    endgenerate
+
+
 endmodule
+
+module synthcomp (
+    input clk,
+    input v_a,
+    input v_b,
+    output comp_out);
+
+wire qa, qb, qx;
+
+sky130_fd_sc_hd__nor4_1 X_NOR1 (qa, v_a, qb, qb, clk);
+sky130_fd_sc_hd__nor4_1 X_NOR2 (qb, v_b, qa, qa, clk);
+sky130_fd_sc_hd__nor4_1 X_NOR3 (comp_out, qa, qa, qx, qx);
+sky130_fd_sc_hd__nor4_1 X_NOR4 (qx, qb, qb, comp_out, comp_out);
+
+endmodule
+
 `default_nettype wire
