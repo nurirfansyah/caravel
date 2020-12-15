@@ -1,0 +1,582 @@
+
+Magic 8.3 revision 92 - Compiled on Mon Dec  7 21:22:44 UTC 2020.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130: scaleFactor=2, multiplier=2
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/usr/local/bin/drc_checks/magic_drc_check.tcl" from command line.
+caravel: 10000 rects
+caravel: 20000 rects
+caravel: 30000 rects
+caravel: 40000 rects
+caravel: 50000 rects
+caravel: 60000 rects
+caravel: 70000 rects
+caravel: 80000 rects
+[INFO]: Loading caravel
+
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: user_project_wrapper
+Reading "sky130_fd_sc_hd__decap_3".
+Error while reading cell "sky130_fd_sc_hd__decap_3" (byte position 150): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__decap_12".
+Error while reading cell "sky130_fd_sc_hd__decap_12" (byte position 5780): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__decap_8".
+Error while reading cell "sky130_fd_sc_hd__decap_8" (byte position 9914): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__decap_6".
+Error while reading cell "sky130_fd_sc_hd__decap_6" (byte position 13440): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__decap_4".
+Error while reading cell "sky130_fd_sc_hd__decap_4" (byte position 16582): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__conb_1".
+Error while reading cell "sky130_fd_sc_hd__conb_1" (byte position 19372): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__buf_2".
+Error while reading cell "sky130_fd_sc_hd__buf_2" (byte position 22730): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__nor4_1".
+Error while reading cell "sky130_fd_sc_hd__nor4_1" (byte position 28634): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Error while reading cell "sky130_fd_sc_hd__dfxtp_4" (byte position 33410): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 47568): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__o22a_4".
+Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 51374): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 61058): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__inv_2".
+Error while reading cell "sky130_fd_sc_hd__inv_2" (byte position 73784): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__diode_2".
+Error while reading cell "sky130_fd_sc_hd__diode_2" (byte position 77588): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__or4_4".
+Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 81072): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "top_astria".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+    7100 uses
+    7200 uses
+    7300 uses
+    7400 uses
+    7500 uses
+    7600 uses
+    7700 uses
+    7800 uses
+    7900 uses
+    8000 uses
+    8100 uses
+    8200 uses
+    8300 uses
+    8400 uses
+    8500 uses
+    8600 uses
+    8700 uses
+    8800 uses
+    8900 uses
+    9000 uses
+    9100 uses
+    9200 uses
+    9300 uses
+    9400 uses
+    9500 uses
+    9600 uses
+    9700 uses
+    9800 uses
+    9900 uses
+    10000 uses
+    10100 uses
+    10200 uses
+    10300 uses
+    10400 uses
+    10500 uses
+    10600 uses
+    10700 uses
+    10800 uses
+    10900 uses
+    11000 uses
+    11100 uses
+    11200 uses
+    11300 uses
+    11400 uses
+    11500 uses
+    11600 uses
+    11700 uses
+    11800 uses
+    11900 uses
+    12000 uses
+    12100 uses
+    12200 uses
+    12300 uses
+    12400 uses
+    12500 uses
+    12600 uses
+    12700 uses
+    12800 uses
+    12900 uses
+    13000 uses
+    13100 uses
+    13200 uses
+    13300 uses
+    13400 uses
+    13500 uses
+    13600 uses
+    13700 uses
+    13800 uses
+    13900 uses
+    14000 uses
+    14100 uses
+    14200 uses
+    14300 uses
+    14400 uses
+    14500 uses
+    14600 uses
+    14700 uses
+    14800 uses
+    14900 uses
+    15000 uses
+    15100 uses
+    15200 uses
+    15300 uses
+    15400 uses
+    15500 uses
+    15600 uses
+    15700 uses
+    15800 uses
+    15900 uses
+    16000 uses
+    16100 uses
+    16200 uses
+    16300 uses
+    16400 uses
+    16500 uses
+    16600 uses
+    16700 uses
+    16800 uses
+    16900 uses
+    17000 uses
+    17100 uses
+    17200 uses
+    17300 uses
+    17400 uses
+    17500 uses
+    17600 uses
+    17700 uses
+    17800 uses
+    17900 uses
+    18000 uses
+    18100 uses
+    18200 uses
+    18300 uses
+    18400 uses
+    18500 uses
+    18600 uses
+    18700 uses
+    18800 uses
+    18900 uses
+    19000 uses
+    19100 uses
+    19200 uses
+    19300 uses
+    19400 uses
+    19500 uses
+    19600 uses
+    19700 uses
+    19800 uses
+    19900 uses
+    20000 uses
+    20100 uses
+    20200 uses
+    20300 uses
+    20400 uses
+    20500 uses
+    20600 uses
+    20700 uses
+    20800 uses
+    20900 uses
+    21000 uses
+    21100 uses
+    21200 uses
+    21300 uses
+    21400 uses
+    21500 uses
+    21600 uses
+    21700 uses
+    21800 uses
+    21900 uses
+    22000 uses
+    22100 uses
+    22200 uses
+    22300 uses
+    22400 uses
+    22500 uses
+    22600 uses
+    22700 uses
+    22800 uses
+    22900 uses
+    23000 uses
+    23100 uses
+    23200 uses
+    23300 uses
+    23400 uses
+    23500 uses
+    23600 uses
+    23700 uses
+    23800 uses
+    23900 uses
+    24000 uses
+    24100 uses
+    24200 uses
+    24300 uses
+    24400 uses
+    24500 uses
+    24600 uses
+    24700 uses
+    24800 uses
+    24900 uses
+    25000 uses
+    25100 uses
+    25200 uses
+    25300 uses
+    25400 uses
+    25500 uses
+    25600 uses
+    25700 uses
+    25800 uses
+    25900 uses
+    26000 uses
+    26100 uses
+    26200 uses
+    26300 uses
+    26400 uses
+    26500 uses
+    26600 uses
+    26700 uses
+    26800 uses
+    26900 uses
+    27000 uses
+    27100 uses
+    27200 uses
+    27300 uses
+    27400 uses
+    27500 uses
+    27600 uses
+    27700 uses
+    27800 uses
+    27900 uses
+    28000 uses
+    28100 uses
+    28200 uses
+    28300 uses
+    28400 uses
+    28500 uses
+    28600 uses
+    28700 uses
+    28800 uses
+    28900 uses
+    29000 uses
+    29100 uses
+    29200 uses
+    29300 uses
+    29400 uses
+    29500 uses
+    29600 uses
+    29700 uses
+    29800 uses
+    29900 uses
+    30000 uses
+    30100 uses
+    30200 uses
+    30300 uses
+    30400 uses
+    30500 uses
+    30600 uses
+    30700 uses
+    30800 uses
+    30900 uses
+    31000 uses
+    31100 uses
+    31200 uses
+    31300 uses
+    31400 uses
+    31500 uses
+    31600 uses
+    31700 uses
+    31800 uses
+    31900 uses
+    32000 uses
+    32100 uses
+    32200 uses
+    32300 uses
+    32400 uses
+    32500 uses
+    32600 uses
+    32700 uses
+    32800 uses
+    32900 uses
+    33000 uses
+    33100 uses
+    33200 uses
+    33300 uses
+    33400 uses
+    33500 uses
+    33600 uses
+    33700 uses
+    33800 uses
+    33900 uses
+    34000 uses
+    34100 uses
+    34200 uses
+    34300 uses
+    34400 uses
+    34500 uses
+    34600 uses
+    34700 uses
+    34800 uses
+    34900 uses
+    35000 uses
+    35100 uses
+    35200 uses
+    35300 uses
+    35400 uses
+    35500 uses
+    35600 uses
+    35700 uses
+    35800 uses
+    35900 uses
+    36000 uses
+    36100 uses
+    36200 uses
+    36300 uses
+    36400 uses
+    36500 uses
+    36600 uses
+    36700 uses
+    36800 uses
+    36900 uses
+    37000 uses
+    37100 uses
+    37200 uses
+    37300 uses
+    37400 uses
+    37500 uses
+    37600 uses
+    37700 uses
+    37800 uses
+    37900 uses
+    38000 uses
+    38100 uses
+    38200 uses
+    38300 uses
+    38400 uses
+    38500 uses
+    38600 uses
+    38700 uses
+    38800 uses
+    38900 uses
+    39000 uses
+    39100 uses
+    39200 uses
+    39300 uses
+    39400 uses
+    39500 uses
+    39600 uses
+    39700 uses
+    39800 uses
+    39900 uses
+    40000 uses
+    40100 uses
+    40200 uses
+    40300 uses
+    40400 uses
+    40500 uses
+    40600 uses
+    40700 uses
+    40800 uses
+    40900 uses
+    41000 uses
+    41100 uses
+    41200 uses
+    41300 uses
+    41400 uses
+    41500 uses
+    41600 uses
+    41700 uses
+    41800 uses
+    41900 uses
+    42000 uses
+    42100 uses
+    42200 uses
+    42300 uses
+    42400 uses
+    42500 uses
+    42600 uses
+    42700 uses
+    42800 uses
+    42900 uses
+    43000 uses
+    43100 uses
+    43200 uses
+    43300 uses
+    43400 uses
+    43500 uses
+    43600 uses
+    43700 uses
+    43800 uses
+    43900 uses
+    44000 uses
+    44100 uses
+    44200 uses
+    44300 uses
+    44400 uses
+    44500 uses
+    44600 uses
+    44700 uses
+    44800 uses
+    44900 uses
+    45000 uses
+    45100 uses
+    45200 uses
+    45300 uses
+    45400 uses
+    45500 uses
+    45600 uses
+    45700 uses
+    45800 uses
+    45900 uses
+    46000 uses
+    46100 uses
+    46200 uses
+    46300 uses
+    46400 uses
+    46500 uses
+    46600 uses
+    46700 uses
+    46800 uses
+    46900 uses
+    47000 uses
+    47100 uses
+    47200 uses
+    47300 uses
+    47400 uses
+    47500 uses
+    47600 uses
+    47700 uses
+    47800 uses
+    47900 uses
+    48000 uses
+    48100 uses
+    48200 uses
+    48300 uses
+    48400 uses
+    48500 uses
+    48600 uses
+    48700 uses
+    48800 uses
+    48900 uses
+    49000 uses
+    49100 uses
+    49200 uses
+    49300 uses
+    49400 uses
+    49500 uses
+    49600 uses
+    49700 uses
+    49800 uses
+    49900 uses
+    50000 uses
+    50100 uses
+    50200 uses
+Reading "user_project_wrapper".
+Warning:  cell user_project_wrapper already existed before reading GDS!
+Using pre-existing cell definition
+user_project_wrapper: 10000 rects
+user_project_wrapper: 20000 rects
+user_project_wrapper: 30000 rects
+user_project_wrapper: 40000 rects
+user_project_wrapper: 50000 rects
+user_project_wrapper: 60000 rects
+user_project_wrapper: 70000 rects
+user_project_wrapper: 80000 rects
+Processing timestamp mismatches: user_project_wrapper, top_astria.
+chip_io: 10000 rects
+Processing timestamp mismatches: chip_io, mgmt_protect, user_id_programming, storage, mgmt_core, sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped, simple_por, gpio_control_block.
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+[INFO]: COUNT: 2074
+[INFO]: Should be divided by 3 or 4
+[INFO]: DRC Checking DONE (/home/irfansyah/dev/caravel-ELITS//checks/caravel.magic.drc)
+[INFO]: Saving mag view with DRC errors(/home/irfansyah/dev/caravel-ELITS//checks/caravel.magic.drc.mag)
+[INFO]: Saved
