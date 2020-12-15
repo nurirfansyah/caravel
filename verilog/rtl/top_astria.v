@@ -90,14 +90,16 @@ module top_astria #(
     assign wdata = wbs_dat_i;
 
     // Comparator wires
-    wire [1:0] comp256out;
+    //wire [1:0] comp256out;
 
     // IO
-    assign io_out = {comp256out,comp32out[29:0]};   // cut 2 out from comp32
+//    assign io_out = {comp256out,comp32out[29:0]};   // cut 2 out from comp32
+    assign io_out = {comp32out[31:0]};   // cut 2 out from comp32
     assign io_oeb = {(`MPRJ_IO_PADS-1){rst}};
 
     // LA
-    assign la_data_out = {{(127-BITS-2){1'b0}},comp256out,comp32out};
+//    assign la_data_out = {{(127-BITS-2){1'b0}},comp256out,comp32out};
+    assign la_data_out = {{(127-BITS){1'b0}},comp32out};
 
     // Assuming LA probes [63:32] are for controlling the count register  
     assign la_write = ~la_oen[65:34] & ~{BITS{valid}};
@@ -109,6 +111,7 @@ module top_astria #(
 
     stoch_adc_comp #(
         .BITS(BITS)
+//        .COMP_TOTAL(64)
     ) stoch_adc_comp(
         .clk(clk),
         .reset(rst),
@@ -118,19 +121,20 @@ module top_astria #(
         .wdata(wbs_dat_i),
         .wstrb(wstrb),
         .la_write(la_write),
-        .la_input(la_data_in[63:32]),
+        .la_input(la_data_in[65:34]),
         .vcomp32_a(analog_io[24]),
         .vcomp32_b(analog_io[25]),
-        .vcomp256_a(analog_io[27:26]),
-        .vcomp256_a(analog_io[29:28]),
-        .comp32out(comp32out),
-        .comp256out(comp256out)
+//        .vcomp256_a(analog_io[27:26]),
+//        .vcomp256_a(analog_io[29:28]),
+        .comp32out(comp32out)
+//        .comp256out(comp256out)
     );
 
 endmodule
 
 module stoch_adc_comp #(
     parameter BITS = 32
+//    parameter COMP_TOTAL = 64
 )(
     input clk,
     input reset,
@@ -141,29 +145,31 @@ module stoch_adc_comp #(
     input [BITS-1:0] la_input,
     input vcomp32_a,
     input vcomp32_b,
-    input [1:0] vcomp256_a,
-    input [1:0] vcomp256_b,
+//    input [1:0] vcomp256_a,
+//    input [1:0] vcomp256_b,
     output ready,
     output [BITS-1:0] rdata,
-    output [BITS-1:0] comp32out,
-    output [1:0] comp256out
+    output [BITS-1:0] comp32out
+//    output [1:0] comp256out
 );
     reg ready;
     reg [BITS-1:0] rdata;
 
     // Comparator output registers
     reg [BITS-1:0] comp32out;    // Bank 1
-    reg [255:0] comp256out1_reg; // Bank 2
-    reg [255:0] comp256out2_reg; // Bank 3
+//    reg [COMP_TOTAL-1:0] comp256out1_reg; // Bank 2
+//    reg [COMP_TOTAL-1:0] comp256out2_reg; // Bank 3
+//    wire [COMP_TOTAL-1:0] comp256out1_wire; // Bank 2
+//    wire [COMP_TOTAL-1:0] comp256out2_wire; // Bank 3
 
     // Comparator output shift registers
-    reg [255:0] comp256out1_sreg; // Bank 2
-    reg [255:0] comp256out2_sreg; // Bank 3
-    reg [7:0] counter_comp_sreg;
+//    reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
+ //   reg [COMP_TOTAL-1:0] comp256out2_sreg; // Bank 3
+    reg [5:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
 
     // Take output from LSB of comp output shift reg
-    assign comp256out[0] = comp256out1_sreg[0];
-    assign comp256out[1] = comp256out2_sreg[0];
+//    assign comp256out[0] = comp256out1_sreg[0];
+//    assign comp256out[1] = comp256out2_sreg[0];
 
     // Dummy reg to take write operation from wishbone
     // Maybe useful later.
@@ -179,8 +185,8 @@ module stoch_adc_comp #(
             if (~|la_write) begin
                 // shift outputs
                 counter_comp_sreg <= counter_comp_sreg + 1;
-                comp256out1_sreg <= {{1'b0},comp256out1_sreg[31:1]};
-                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
+//                comp256out1_sreg <= {{1'b0},comp256out1_sreg[31:1]};
+//                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
             end
 
             if (valid && !ready) begin
@@ -192,10 +198,10 @@ module stoch_adc_comp #(
                 if (wstrb[3]) dummy[31:24] <= wdata[31:24];
             end
 
-            if (counter_comp_sreg == 0) begin
-                comp256out1_sreg <= comp256out1_reg;
-                comp256out2_sreg <= comp256out2_reg;
-            end
+//            if (counter_comp_sreg == 0) begin
+//                comp256out1_sreg <= comp256out1_reg;
+//                comp256out2_sreg <= comp256out2_reg;
+//            end
         end
     end
 /*
@@ -214,21 +220,26 @@ module stoch_adc_comp #(
             synthcomp comp32(clk, vcomp32_a, vcomp32_b, comp32out[j]);
         end
     endgenerate
-
+/*
     genvar k;
     generate 
-        for(k=0; k<256; k=k+1) begin
-            synthcomp comp256_1(clk, vcomp256_a[0], vcomp256_b[0], comp256out1_reg[k]);
+        for(k=0; k<COMP_TOTAL; k=k+1) begin
+            synthcomp comp256_1(clk, vcomp256_a[0], vcomp256_b[0], comp256out1_wire[k]);
         end
     endgenerate
 
     genvar l;
     generate 
-        for(l=0; l<256; l=l+1) begin
-            synthcomp comp256_2(clk, vcomp256_a[1], vcomp256_b[1], comp256out1_reg[l]);
+        for(l=0; l<COMP_TOTAL; l=l+1) begin
+            synthcomp comp256_2(clk, vcomp256_a[1], vcomp256_b[1], comp256out2_wire[l]);
         end
     endgenerate
 
+    always @(posedge clk) begin
+        comp256out1_reg <= comp256out1_wire;
+        comp256out2_reg <= comp256out2_wire;
+    end
+*/
 endmodule
 
 /* ----------------------
@@ -245,14 +256,19 @@ module synthcomp (
     input clk,
     input v_a,
     input v_b,
-    output comp_out);
+    output reg comp_out);
 
-wire qa, qb, qx;
+wire qa, qb, qx, qcomp_out;
 
 sky130_fd_sc_hd__nor4_1 X_NOR1 (qa, v_a, qb, qb, clk);
 sky130_fd_sc_hd__nor4_1 X_NOR2 (qb, v_b, qa, qa, clk);
-sky130_fd_sc_hd__nor4_1 X_NOR3 (comp_out, qa, qa, qx, qx);
-sky130_fd_sc_hd__nor4_1 X_NOR4 (qx, qb, qb, comp_out, comp_out);
+sky130_fd_sc_hd__nor4_1 X_NOR3 (qcomp_out, qa, qa, qx, qx);
+sky130_fd_sc_hd__nor4_1 X_NOR4 (qx, qb, qb, qcomp_out, qcomp_out);
+
+always @(posedge clk)
+begin
+    comp_out <= qcomp_out;
+end
 
 endmodule
 

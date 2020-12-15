@@ -5097,7 +5097,11 @@ MACRO user_proj_example
   END vssa2
   OBS
       LAYER li1 ;
+<<<<<<< HEAD
         RECT 4.990 6.885 593.790 587.605 ;
+=======
+        RECT 4.990 7.225 593.790 587.605 ;
+>>>>>>> Latest run - not LVS matched yet
       LAYER met1 ;
         RECT 0.000 5.480 597.400 595.640 ;
       LAYER met2 ;
@@ -5706,6 +5710,7 @@ MACRO user_proj_example
         RECT 595.360 4.000 595.900 4.280 ;
         RECT 596.740 4.000 596.820 4.280 ;
       LAYER met3 ;
+<<<<<<< HEAD
         RECT 0.915 4.255 559.710 587.685 ;
       LAYER met4 ;
         RECT 95.445 11.055 96.910 76.665 ;
@@ -5717,6 +5722,12 @@ MACRO user_proj_example
         RECT 179.410 11.055 180.310 76.665 ;
         RECT 182.710 11.055 183.610 76.665 ;
         RECT 186.010 11.055 208.015 76.665 ;
+=======
+        RECT 20.510 4.255 559.710 587.685 ;
+      LAYER met4 ;
+        RECT 89.005 10.640 96.910 587.760 ;
+        RECT 99.310 10.640 559.710 587.760 ;
+>>>>>>> Latest run - not LVS matched yet
   END
 END user_proj_example
 END LIBRARY

@@ -19,11 +19,14 @@ set script_dir [file dirname [file normalize [info script]]]
 prep -design $script_dir -tag user_project_wrapper_empty -overwrite
 set save_path $script_dir/../..
 
-verilog_elaborate
+#verilog_elaborate
+run_synthesis
 
-init_floorplan
+#init_floorplan
 
-place_io_ol
+#place_io_ol
+
+run_floorplan
 
 add_macro_obs \
 	-defFile $::env(CURRENT_DEF) \

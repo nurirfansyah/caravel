@@ -13,10 +13,11 @@ set ::env(CLOCK_NET) "stoch_adc_comp.clk"
 set ::env(CLOCK_PERIOD) "15"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 800 600"
+set ::env(DIE_AREA) "0 0 800 800"
 set ::env(DESIGN_IS_CORE) 0
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(DIODE_INSERTION_STRATEGY) 2
+set ::env(DIODE_INSERTION_STRATEGY) 3
+set ::env(GLB_RT_MAXLAYER) 5
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
