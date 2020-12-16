@@ -13,25 +13,23 @@ Loading "/usr/local/bin/consistency_checks/magic_list_instances.tcl" from comman
 Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 3.0
 Library name: caravel
-Reading "sky130_fd_sc_hd__fill_2".
-Reading "sky130_fd_sc_hd__conb_1".
-Error while reading cell "sky130_fd_sc_hd__conb_1" (byte position 1550): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_4".
-Error while reading cell "sky130_fd_sc_hd__decap_4" (byte position 4910): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__decap_6".
-Error while reading cell "sky130_fd_sc_hd__decap_6" (byte position 7700): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_8".
-Error while reading cell "sky130_fd_sc_hd__decap_8" (byte position 10842): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_12".
-Error while reading cell "sky130_fd_sc_hd__decap_12" (byte position 14370): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
-Reading "sky130_fd_sc_hd__fill_1".
+Error while reading cell "sky130_fd_sc_hd__decap_6" (byte position 138): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__decap_3".
-Error while reading cell "sky130_fd_sc_hd__decap_3" (byte position 21470): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__decap_3" (byte position 3280): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__decap_12".
+Error while reading cell "sky130_fd_sc_hd__decap_12" (byte position 5944): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__decap_4".
+Error while reading cell "sky130_fd_sc_hd__decap_4" (byte position 10078): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__decap_8".
+Error while reading cell "sky130_fd_sc_hd__decap_8" (byte position 15962): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__conb_1".
+Error while reading cell "sky130_fd_sc_hd__conb_1" (byte position 20772): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "user_id_programming".
     100 uses
-Reading "sky130_fd_sc_hd__diode_2".
-Error while reading cell "sky130_fd_sc_hd__diode_2" (byte position 98076): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "pk_contact_34".
 Reading "pk_contact_9".
 Reading "pk_contact_8".
@@ -122,11 +120,11 @@ Reading "pk_control_logic_rw".
     100 uses
 Reading "pk_cr_3".
 Reading "pk_control_logic_r".
-Error while reading cell "pk_control_logic_r" (byte position 869336): Warning:  Cell pk_control_logic_r boundary was redefined.
-Error while reading cell "pk_control_logic_r" (byte position 869336): Warning:  Cell pk_control_logic_r boundary was redefined.
-Error while reading cell "pk_control_logic_r" (byte position 869336): Warning:  Cell pk_control_logic_r boundary was redefined.
-Error while reading cell "pk_control_logic_r" (byte position 869336): Warning:  Cell pk_control_logic_r boundary was redefined.
-Error while reading cell "pk_control_logic_r" (byte position 869336): Warning:  Cell pk_control_logic_r boundary was redefined.
+Error while reading cell "pk_control_logic_r" (byte position 865850): Warning:  Cell pk_control_logic_r boundary was redefined.
+Error while reading cell "pk_control_logic_r" (byte position 865850): Warning:  Cell pk_control_logic_r boundary was redefined.
+Error while reading cell "pk_control_logic_r" (byte position 865850): Warning:  Cell pk_control_logic_r boundary was redefined.
+Error while reading cell "pk_control_logic_r" (byte position 865850): Warning:  Cell pk_control_logic_r boundary was redefined.
+Error while reading cell "pk_control_logic_r" (byte position 865850): Warning:  Cell pk_control_logic_r boundary was redefined.
 Reading "pk_cr_2".
     100 uses
     200 uses
@@ -248,8 +246,8 @@ Reading "pk_precharge_array".
     100 uses
 Reading "pk_port_data".
 Reading "pk_row_cap_cell_1rw_1r".
-Error while reading cell "pk_row_cap_cell_1rw_1r" (byte position 2245956): Unknown layer/datatype in boundary, layer=33 type=43
-Error while reading cell "pk_row_cap_cell_1rw_1r" (byte position 2246916): Unknown layer/datatype in boundary, layer=22 type=21
+Error while reading cell "pk_row_cap_cell_1rw_1r" (byte position 2242470): Unknown layer/datatype in boundary, layer=33 type=43
+Error while reading cell "pk_row_cap_cell_1rw_1r" (byte position 2243430): Unknown layer/datatype in boundary, layer=22 type=21
 Reading "pk_row_cap_array_0".
     100 uses
     200 uses
@@ -262,28 +260,28 @@ Reading "pk_col_cap_cell_1rw_1r".
 Reading "pk_col_cap_array".
     100 uses
 Reading "pk_dummy_cell_1rw_1r".
-Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2455478): Unknown layer/datatype in boundary, layer=33 type=43
-Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2459670): Unknown layer/datatype in boundary, layer=22 type=21
-Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2460118): Unknown layer/datatype in boundary, layer=22 type=22
-Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2460374): Unknown layer/datatype in boundary, layer=92 type=44
-Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2460502): Unknown layer/datatype in boundary, layer=235 type=0
+Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2451992): Unknown layer/datatype in boundary, layer=33 type=43
+Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2456184): Unknown layer/datatype in boundary, layer=22 type=21
+Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2456632): Unknown layer/datatype in boundary, layer=22 type=22
+Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2456888): Unknown layer/datatype in boundary, layer=92 type=44
+Error while reading cell "pk_dummy_cell_1rw_1r" (byte position 2457016): Unknown layer/datatype in boundary, layer=235 type=0
 Reading "pk_dummy_array".
 Reading "pk_replica_cell_1rw_1r".
-Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2537802): Unknown layer/datatype in boundary, layer=33 type=43
-Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2541994): Unknown layer/datatype in boundary, layer=22 type=21
-Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2542954): Unknown layer/datatype in boundary, layer=22 type=22
-Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2543210): Unknown layer/datatype in boundary, layer=92 type=44
-Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2543338): Unknown layer/datatype in boundary, layer=235 type=0
+Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2534316): Unknown layer/datatype in boundary, layer=33 type=43
+Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2538508): Unknown layer/datatype in boundary, layer=22 type=21
+Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2539468): Unknown layer/datatype in boundary, layer=22 type=22
+Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2539724): Unknown layer/datatype in boundary, layer=92 type=44
+Error while reading cell "pk_replica_cell_1rw_1r" (byte position 2539852): Unknown layer/datatype in boundary, layer=235 type=0
 Reading "pk_replica_column_0".
     100 uses
 Reading "pk_replica_column".
     100 uses
 Reading "pk_cell_1rw_1r".
-Error while reading cell "pk_cell_1rw_1r" (byte position 2722718): Unknown layer/datatype in boundary, layer=33 type=43
-Error while reading cell "pk_cell_1rw_1r" (byte position 2726910): Unknown layer/datatype in boundary, layer=22 type=21
-Error while reading cell "pk_cell_1rw_1r" (byte position 2727870): Unknown layer/datatype in boundary, layer=22 type=22
-Error while reading cell "pk_cell_1rw_1r" (byte position 2728126): Unknown layer/datatype in boundary, layer=92 type=44
-Error while reading cell "pk_cell_1rw_1r" (byte position 2728254): Unknown layer/datatype in boundary, layer=235 type=0
+Error while reading cell "pk_cell_1rw_1r" (byte position 2719232): Unknown layer/datatype in boundary, layer=33 type=43
+Error while reading cell "pk_cell_1rw_1r" (byte position 2723424): Unknown layer/datatype in boundary, layer=22 type=21
+Error while reading cell "pk_cell_1rw_1r" (byte position 2724384): Unknown layer/datatype in boundary, layer=22 type=22
+Error while reading cell "pk_cell_1rw_1r" (byte position 2724640): Unknown layer/datatype in boundary, layer=92 type=44
+Error while reading cell "pk_cell_1rw_1r" (byte position 2724768): Unknown layer/datatype in boundary, layer=235 type=0
 Reading "pk_bitcell_array".
     100 uses
     200 uses
@@ -1933,6 +1931,8 @@ Reading "pk_sram_1rw1r_32_256_8_sky130".
     155700 uses
     155800 uses
 Reading "sram_1rw1r_32_256_8_sky130".
+Reading "sky130_fd_sc_hd__diode_2".
+Error while reading cell "sky130_fd_sc_hd__diode_2" (byte position 13397034): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "storage".
     100 uses
     200 uses
@@ -1983,86 +1983,84 @@ Reading "storage".
     4700 uses
     4800 uses
     4900 uses
-Reading "sky130_fd_sc_hd__or4_4".
-Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 15144992): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__clkbuf_16".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 15152296): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__o22a_4".
-Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 15165024): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__inv_2".
-Error while reading cell "sky130_fd_sc_hd__inv_2" (byte position 15174704): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__clkbuf_1".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 15178510): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__dfxtp_4".
-Error while reading cell "sky130_fd_sc_hd__dfxtp_4" (byte position 15182316): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_2".
-Error while reading cell "sky130_fd_sc_hd__buf_2" (byte position 15196470): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_2" (byte position 15144992): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__inv_2".
+Error while reading cell "sky130_fd_sc_hd__inv_2" (byte position 15149482): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Error while reading cell "sky130_fd_sc_hd__dfxtp_4" (byte position 15153286): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a211o_4".
-Error while reading cell "sky130_fd_sc_hd__a211o_4" (byte position 15200962): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a211o_4" (byte position 15167442): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__nor2_4".
-Error while reading cell "sky130_fd_sc_hd__nor2_4" (byte position 15210078): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__nor2_4" (byte position 15176558): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a32o_4".
-Error while reading cell "sky130_fd_sc_hd__a32o_4" (byte position 15217180): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a32o_4" (byte position 15183660): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_8".
-Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 15229370): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 15195850): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a22oi_4".
-Error while reading cell "sky130_fd_sc_hd__a22oi_4" (byte position 15238258): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a22oi_4" (byte position 15204738): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__o22a_4".
+Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 15216786): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__and2_4".
-Error while reading cell "sky130_fd_sc_hd__and2_4" (byte position 15250306): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__and2_4" (byte position 15226468): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__or2_4".
-Error while reading cell "sky130_fd_sc_hd__or2_4" (byte position 15256046): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__or2_4" (byte position 15232208): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__and3_4".
-Error while reading cell "sky130_fd_sc_hd__and3_4" (byte position 15261804): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__and3_4" (byte position 15237966): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__or4_4".
+Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 15244856): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a2bb2o_4".
-Error while reading cell "sky130_fd_sc_hd__a2bb2o_4" (byte position 15268698): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a2bb2o_4" (byte position 15252160): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__o21a_4".
-Error while reading cell "sky130_fd_sc_hd__o21a_4" (byte position 15280158): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__o21a_4" (byte position 15263620): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_4".
-Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 15288136): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 15271598): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__and4_4".
-Error while reading cell "sky130_fd_sc_hd__and4_4" (byte position 15293540): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__and4_4" (byte position 15277002): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__or3_4".
-Error while reading cell "sky130_fd_sc_hd__or3_4" (byte position 15300984): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__or3_4" (byte position 15284446): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__nand2_4".
-Error while reading cell "sky130_fd_sc_hd__nand2_4" (byte position 15308098): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__nand2_4" (byte position 15291560): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__o32a_4".
-Error while reading cell "sky130_fd_sc_hd__o32a_4" (byte position 15315736): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__o32a_4" (byte position 15299198): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a21oi_4".
-Error while reading cell "sky130_fd_sc_hd__a21oi_4" (byte position 15328040): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a21oi_4" (byte position 15311502): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dfrtp_4".
-Error while reading cell "sky130_fd_sc_hd__dfrtp_4" (byte position 15336630): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dfrtp_4" (byte position 15320092): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a21bo_4".
-Error while reading cell "sky130_fd_sc_hd__a21bo_4" (byte position 15354478): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a21bo_4" (byte position 15337940): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dfstp_4".
-Error while reading cell "sky130_fd_sc_hd__dfstp_4" (byte position 15362782): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dfstp_4" (byte position 15346244): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__o21ai_4".
-Error while reading cell "sky130_fd_sc_hd__o21ai_4" (byte position 15380512): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__o21ai_4" (byte position 15363974): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a21o_4".
-Error while reading cell "sky130_fd_sc_hd__a21o_4" (byte position 15388622): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a21o_4" (byte position 15372084): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__o41a_4".
-Error while reading cell "sky130_fd_sc_hd__o41a_4" (byte position 15396842): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__o41a_4" (byte position 15380304): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a41o_4".
-Error while reading cell "sky130_fd_sc_hd__a41o_4" (byte position 15410002): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a41o_4" (byte position 15393464): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a2111o_4".
-Error while reading cell "sky130_fd_sc_hd__a2111o_4" (byte position 15422526): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a2111o_4" (byte position 15405988): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 15418400): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkinv_1".
-Error while reading cell "sky130_fd_sc_hd__clkinv_1" (byte position 15434938): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkinv_1" (byte position 15422208): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__einvn_4".
-Error while reading cell "sky130_fd_sc_hd__einvn_4" (byte position 15438768): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__einvn_4" (byte position 15426038): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__einvp_2".
-Error while reading cell "sky130_fd_sc_hd__einvp_2" (byte position 15446602): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__einvp_2" (byte position 15433872): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkbuf_2".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_2" (byte position 15452848): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkbuf_2" (byte position 15440118): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__einvn_8".
-Error while reading cell "sky130_fd_sc_hd__einvn_8" (byte position 15457450): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__einvn_8" (byte position 15444720): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkinv_8".
-Error while reading cell "sky130_fd_sc_hd__clkinv_8" (byte position 15469772): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkinv_8" (byte position 15457042): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkinv_2".
-Error while reading cell "sky130_fd_sc_hd__clkinv_2" (byte position 15479020): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkinv_2" (byte position 15466290): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__einvp_1".
-Error while reading cell "sky130_fd_sc_hd__einvp_1" (byte position 15483318): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__einvp_1" (byte position 15470588): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__or2_2".
-Error while reading cell "sky130_fd_sc_hd__or2_2" (byte position 15487884): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__or2_2" (byte position 15475154): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "digital_pll".
     100 uses
     200 uses
@@ -2076,6 +2074,8 @@ Reading "digital_pll".
     1000 uses
     1100 uses
     1200 uses
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 17868720): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dfbbn_2".
 Error while reading cell "sky130_fd_sc_hd__dfbbn_2" (byte position 17881448): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__ebufn_2".
@@ -5253,511 +5253,7 @@ Reading "mgmt_protect".
     7400 uses
     7500 uses
     7600 uses
-Reading "sky130_fd_sc_hd__nor4_1".
-Error while reading cell "sky130_fd_sc_hd__nor4_1" (byte position 236303058): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "top_astria".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-    7300 uses
-    7400 uses
-    7500 uses
-    7600 uses
-    7700 uses
-    7800 uses
-    7900 uses
-    8000 uses
-    8100 uses
-    8200 uses
-    8300 uses
-    8400 uses
-    8500 uses
-    8600 uses
-    8700 uses
-    8800 uses
-    8900 uses
-    9000 uses
-    9100 uses
-    9200 uses
-    9300 uses
-    9400 uses
-    9500 uses
-    9600 uses
-    9700 uses
-    9800 uses
-    9900 uses
-    10000 uses
-    10100 uses
-    10200 uses
-    10300 uses
-    10400 uses
-    10500 uses
-    10600 uses
-    10700 uses
-    10800 uses
-    10900 uses
-    11000 uses
-    11100 uses
-    11200 uses
-    11300 uses
-    11400 uses
-    11500 uses
-    11600 uses
-    11700 uses
-    11800 uses
-    11900 uses
-    12000 uses
-    12100 uses
-    12200 uses
-    12300 uses
-    12400 uses
-    12500 uses
-    12600 uses
-    12700 uses
-    12800 uses
-    12900 uses
-    13000 uses
-    13100 uses
-    13200 uses
-    13300 uses
-    13400 uses
-    13500 uses
-    13600 uses
-    13700 uses
-    13800 uses
-    13900 uses
-    14000 uses
-    14100 uses
-    14200 uses
-    14300 uses
-    14400 uses
-    14500 uses
-    14600 uses
-    14700 uses
-    14800 uses
-    14900 uses
-    15000 uses
-    15100 uses
-    15200 uses
-    15300 uses
-    15400 uses
-    15500 uses
-    15600 uses
-    15700 uses
-    15800 uses
-    15900 uses
-    16000 uses
-    16100 uses
-    16200 uses
-    16300 uses
-    16400 uses
-    16500 uses
-    16600 uses
-    16700 uses
-    16800 uses
-    16900 uses
-    17000 uses
-    17100 uses
-    17200 uses
-    17300 uses
-    17400 uses
-    17500 uses
-    17600 uses
-    17700 uses
-    17800 uses
-    17900 uses
-    18000 uses
-    18100 uses
-    18200 uses
-    18300 uses
-    18400 uses
-    18500 uses
-    18600 uses
-    18700 uses
-    18800 uses
-    18900 uses
-    19000 uses
-    19100 uses
-    19200 uses
-    19300 uses
-    19400 uses
-    19500 uses
-    19600 uses
-    19700 uses
-    19800 uses
-    19900 uses
-    20000 uses
-    20100 uses
-    20200 uses
-    20300 uses
-    20400 uses
-    20500 uses
-    20600 uses
-    20700 uses
-    20800 uses
-    20900 uses
-    21000 uses
-    21100 uses
-    21200 uses
-    21300 uses
-    21400 uses
-    21500 uses
-    21600 uses
-    21700 uses
-    21800 uses
-    21900 uses
-    22000 uses
-    22100 uses
-    22200 uses
-    22300 uses
-    22400 uses
-    22500 uses
-    22600 uses
-    22700 uses
-    22800 uses
-    22900 uses
-    23000 uses
-    23100 uses
-    23200 uses
-    23300 uses
-    23400 uses
-    23500 uses
-    23600 uses
-    23700 uses
-    23800 uses
-    23900 uses
-    24000 uses
-    24100 uses
-    24200 uses
-    24300 uses
-    24400 uses
-    24500 uses
-    24600 uses
-    24700 uses
-    24800 uses
-    24900 uses
-    25000 uses
-    25100 uses
-    25200 uses
-    25300 uses
-    25400 uses
-    25500 uses
-    25600 uses
-    25700 uses
-    25800 uses
-    25900 uses
-    26000 uses
-    26100 uses
-    26200 uses
-    26300 uses
-    26400 uses
-    26500 uses
-    26600 uses
-    26700 uses
-    26800 uses
-    26900 uses
-    27000 uses
-    27100 uses
-    27200 uses
-    27300 uses
-    27400 uses
-    27500 uses
-    27600 uses
-    27700 uses
-    27800 uses
-    27900 uses
-    28000 uses
-    28100 uses
-    28200 uses
-    28300 uses
-    28400 uses
-    28500 uses
-    28600 uses
-    28700 uses
-    28800 uses
-    28900 uses
-    29000 uses
-    29100 uses
-    29200 uses
-    29300 uses
-    29400 uses
-    29500 uses
-    29600 uses
-    29700 uses
-    29800 uses
-    29900 uses
-    30000 uses
-    30100 uses
-    30200 uses
-    30300 uses
-    30400 uses
-    30500 uses
-    30600 uses
-    30700 uses
-    30800 uses
-    30900 uses
-    31000 uses
-    31100 uses
-    31200 uses
-    31300 uses
-    31400 uses
-    31500 uses
-    31600 uses
-    31700 uses
-    31800 uses
-    31900 uses
-    32000 uses
-    32100 uses
-    32200 uses
-    32300 uses
-    32400 uses
-    32500 uses
-    32600 uses
-    32700 uses
-    32800 uses
-    32900 uses
-    33000 uses
-    33100 uses
-    33200 uses
-    33300 uses
-    33400 uses
-    33500 uses
-    33600 uses
-    33700 uses
-    33800 uses
-    33900 uses
-    34000 uses
-    34100 uses
-    34200 uses
-    34300 uses
-    34400 uses
-    34500 uses
-    34600 uses
-    34700 uses
-    34800 uses
-    34900 uses
-    35000 uses
-    35100 uses
-    35200 uses
-    35300 uses
-    35400 uses
-    35500 uses
-    35600 uses
-    35700 uses
-    35800 uses
-    35900 uses
-    36000 uses
-    36100 uses
-    36200 uses
-    36300 uses
-    36400 uses
-    36500 uses
-    36600 uses
-    36700 uses
-    36800 uses
-    36900 uses
-    37000 uses
-    37100 uses
-    37200 uses
-    37300 uses
-    37400 uses
-    37500 uses
-    37600 uses
-    37700 uses
-    37800 uses
-    37900 uses
-    38000 uses
-    38100 uses
-    38200 uses
-    38300 uses
-    38400 uses
-    38500 uses
-    38600 uses
-    38700 uses
-    38800 uses
-    38900 uses
-    39000 uses
-    39100 uses
-    39200 uses
-    39300 uses
-    39400 uses
-    39500 uses
-    39600 uses
-    39700 uses
-    39800 uses
-    39900 uses
-    40000 uses
-    40100 uses
-    40200 uses
-    40300 uses
-    40400 uses
-    40500 uses
-    40600 uses
-    40700 uses
-    40800 uses
-    40900 uses
-    41000 uses
-    41100 uses
-    41200 uses
-    41300 uses
-    41400 uses
-    41500 uses
-    41600 uses
-    41700 uses
-    41800 uses
-    41900 uses
-    42000 uses
-    42100 uses
-    42200 uses
-    42300 uses
-    42400 uses
-    42500 uses
-    42600 uses
-    42700 uses
-    42800 uses
-    42900 uses
-    43000 uses
-    43100 uses
-    43200 uses
-    43300 uses
-    43400 uses
-    43500 uses
-    43600 uses
-    43700 uses
-    43800 uses
-    43900 uses
-    44000 uses
-    44100 uses
-    44200 uses
-    44300 uses
-    44400 uses
-    44500 uses
-    44600 uses
-    44700 uses
-    44800 uses
-    44900 uses
-    45000 uses
-    45100 uses
-    45200 uses
-    45300 uses
-    45400 uses
-    45500 uses
-    45600 uses
-    45700 uses
-    45800 uses
-    45900 uses
-    46000 uses
-    46100 uses
-    46200 uses
-    46300 uses
-    46400 uses
-    46500 uses
-    46600 uses
-    46700 uses
-    46800 uses
-    46900 uses
-    47000 uses
-    47100 uses
-    47200 uses
-    47300 uses
-    47400 uses
-    47500 uses
-    47600 uses
-    47700 uses
-    47800 uses
-    47900 uses
-    48000 uses
-    48100 uses
-    48200 uses
-    48300 uses
-    48400 uses
-    48500 uses
-    48600 uses
-    48700 uses
-    48800 uses
-    48900 uses
-    49000 uses
-    49100 uses
-    49200 uses
-    49300 uses
-    49400 uses
-    49500 uses
-    49600 uses
-    49700 uses
-    49800 uses
-    49900 uses
-    50000 uses
-    50100 uses
-    50200 uses
 Reading "user_project_wrapper".
 Reading "sky130_ef_io__com_bus_slice_20um".
 Reading "sky130_fd_io__corner_bus_overlay".
@@ -5785,7 +5281,7 @@ Reading "sky130_fd_pr__nfet_01v8__example_55959141808673".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808670".
 Reading "sky130_fd_pr__via_pol1__example_5595914180839".
 Reading "sky130_fd_pr__res_bent_po__example_55959141808668".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808668" (byte position 246475374): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808668" (byte position 240296446): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__dfl1__example_55959141808662".
 Reading "sky130_fd_pr__via_l1m1__example_55959141808661".
 Reading "sky130_fd_pr__via_l1m1__example_559591418084".
@@ -5797,36 +5293,36 @@ Reading "sky130_fd_io__com_bus_hookup".
 Reading "sky130_fd_pr__genrivetdlring__example_559591418082".
 Reading "sky130_fd_pr__gendlring__example_559591418081".
 Reading "sky130_fd_pr__padplhp__example_559591418080".
-Error while reading cell "sky130_fd_pr__padplhp__example_559591418080" (byte position 246678846): Unknown layer/datatype in boundary, layer=81 type=20
+Error while reading cell "sky130_fd_pr__padplhp__example_559591418080" (byte position 240499918): Unknown layer/datatype in boundary, layer=81 type=20
 Reading "sky130_fd_io__pad_esd".
 Reading "sky130_fd_io__com_busses_esd".
 Reading "sky130_fd_pr__res_bent_po__example_55959141808667".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808667" (byte position 246682436): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808667" (byte position 240503508): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_bent_po__example_55959141808669".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808669" (byte position 246683622): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808669" (byte position 240504694): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__top_ground_hvc_wpad".
     100 uses
 Reading "sky130_fd_io__overlay_vssa_hvc".
 Reading "sky130_ef_io__vssa_hvc_pad".
 Reading "sky130_fd_io__res250_sub_small".
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250806152): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250806184): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250807060): Unknown layer/datatype in boundary, layer=81 type=19
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250807124): Unknown layer/datatype in boundary, layer=66 type=14
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250808776): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250808808): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250808840): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250808872): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250808904): NODE elements not supported: skipping.
-Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 250809000): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244627224): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244627256): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244628132): Unknown layer/datatype in boundary, layer=81 type=19
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244628196): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244629848): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244629880): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244629912): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244629944): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244629976): NODE elements not supported: skipping.
+Error while reading cell "sky130_fd_io__res250_sub_small" (byte position 244630072): NODE elements not supported: skipping.
 Reading "sky130_fd_io__res250only_small".
-Error while reading cell "sky130_fd_io__res250only_small" (byte position 250809366): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_io__res250only_small" (byte position 244630438): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__hvdfm1sd2__example_55959141808719".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808767".
 Reading "sky130_fd_pr__hvdfm1sd2__example_55959141808765".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808764".
 Reading "sky130_fd_pr__res_generic_po__example_5595914180838".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180838" (byte position 250815348): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180838" (byte position 244636420): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__tk_tie_r_out_esd".
 Reading "sky130_fd_pr__hvdfm1sd2__example_55959141808243".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808723".
@@ -5842,15 +5338,15 @@ Reading "sky130_fd_pr__via_l1m1__example_5595914180858".
 Reading "sky130_fd_pr__via_l1m1__example_55959141808264".
 Reading "sky130_fd_pr__via_pol1__example_5595914180833".
 Reading "sky130_fd_pr__res_generic_po__example_5595914180864".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180864" (byte position 250843854): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180864" (byte position 244664926): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__tk_em1s_cdns_5595914180859".
 Reading "sky130_fd_io__tk_em1s_cdns_55959141808288".
 Reading "sky130_fd_pr__res_bent_po__example_5595914180863".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180863" (byte position 250845906): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180863" (byte position 244666978): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_bent_po__example_5595914180862".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180862" (byte position 250846514): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180862" (byte position 244667586): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_bent_po__example_55959141808715".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808715" (byte position 250847444): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808715" (byte position 244668516): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__tk_em1o_cdns_55959141808289".
 Reading "sky130_fd_io__com_res_weak_v2".
 Reading "sky130_fd_pr__via_m1m2__example_55959141808728".
@@ -5888,12 +5384,12 @@ Reading "sky130_fd_pr__tpl1__example_55959141808149".
 Reading "sky130_fd_pr__tpl1__example_55959141808148".
 Reading "sky130_fd_pr__via_pol1__example_55959141808147".
 Reading "sky130_fd_io__signal_5_sym_hv_local_5term".
-Error while reading cell "sky130_fd_io__signal_5_sym_hv_local_5term" (byte position 250888762): Unknown layer/datatype in boundary, layer=81 type=19
-Error while reading cell "sky130_fd_io__signal_5_sym_hv_local_5term" (byte position 250889754): Unknown layer/datatype in boundary, layer=66 type=9
+Error while reading cell "sky130_fd_io__signal_5_sym_hv_local_5term" (byte position 244709834): Unknown layer/datatype in boundary, layer=81 type=19
+Error while reading cell "sky130_fd_io__signal_5_sym_hv_local_5term" (byte position 244710826): Unknown layer/datatype in boundary, layer=66 type=9
 Reading "sky130_fd_pr__dfl1sd__example_5595914180819".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808555".
 Reading "sky130_fd_io__gpio_buf_localesdv2".
-Error while reading cell "sky130_fd_io__gpio_buf_localesdv2" (byte position 250893436): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__gpio_buf_localesdv2" (byte position 244714508): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_pr__via_pol1__example_559591418083".
 Reading "sky130_fd_pr__dfl1sd__example_559591418086".
 Reading "sky130_fd_pr__hvdfl1sd2__example_55959141808316".
@@ -5927,8 +5423,8 @@ Reading "sky130_fd_pr__hvdftpm1s2__example_55959141808659".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808658".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808657".
 Reading "sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2".
-Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2" (byte position 250991530): Unknown layer/datatype in boundary, layer=81 type=8
-Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2" (byte position 250993322): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2" (byte position 244812602): Unknown layer/datatype in boundary, layer=81 type=8
+Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2" (byte position 244814394): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__gpio_pudrvr_strong_axres4v2".
 Reading "sky130_fd_pr__via_l1m1__example_55959141808752".
 Reading "sky130_fd_pr__via_l1m1__example_55959141808751".
@@ -5971,9 +5467,9 @@ Reading "sky130_fd_io__xres_tk_p_em1o_cdns_55959141808757".
 Reading "sky130_fd_io__xres_tk_p_em1o_cdns_55959141808756".
 Reading "sky130_fd_pr__dfl1__example_55959141808187".
 Reading "sky130_fd_pr__res_generic_nd__example_55959141808755".
-Error while reading cell "sky130_fd_pr__res_generic_nd__example_55959141808755" (byte position 251918672): Unknown layer/datatype in boundary, layer=65 type=14
+Error while reading cell "sky130_fd_pr__res_generic_nd__example_55959141808755" (byte position 245739744): Unknown layer/datatype in boundary, layer=65 type=14
 Reading "sky130_fd_pr__res_generic_nd__example_55959141808754".
-Error while reading cell "sky130_fd_pr__res_generic_nd__example_55959141808754" (byte position 251919294): Unknown layer/datatype in boundary, layer=65 type=14
+Error while reading cell "sky130_fd_pr__res_generic_nd__example_55959141808754" (byte position 245740366): Unknown layer/datatype in boundary, layer=65 type=14
 Reading "sky130_fd_io__xres_p_em1c_cdns_55959141808753".
 Reading "sky130_fd_io__xres2v2_rcfilter_lpfv2".
     100 uses
@@ -5983,7 +5479,7 @@ Reading "sky130_fd_io__xres2v2_rcfilter_lpfv2".
     500 uses
     600 uses
 Reading "sky130_fd_pr__res_bent_po__example_5595914180861".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180861" (byte position 252455688): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_5595914180861" (byte position 246276760): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__com_res_weak_bentbigres".
 Reading "sky130_fd_io__tk_em1o_cdns_5595914180860".
 Reading "sky130_fd_io__com_res_weak".
@@ -5997,8 +5493,8 @@ Reading "sky130_fd_pr__hvdftpl1s__example_55959141808646".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808647".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808645".
 Reading "sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2".
-Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2" (byte position 252498282): Unknown layer/datatype in boundary, layer=81 type=8
-Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2" (byte position 252500074): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2" (byte position 246319354): Unknown layer/datatype in boundary, layer=81 type=8
+Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2" (byte position 246321146): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__gpio_pddrvr_strong_xres4v2".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808787".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808786".
@@ -6031,9 +5527,9 @@ Reading "sky130_fd_pr__nfet_01v8__example_559591418087".
 Reading "sky130_fd_pr__pfet_01v8__example_559591418085".
 Reading "sky130_fd_io__hvsbt_nand2".
 Reading "sky130_fd_pr__res_bent_nd__example_55959141808769".
-Error while reading cell "sky130_fd_pr__res_bent_nd__example_55959141808769" (byte position 253376626): Unknown layer/datatype in boundary, layer=65 type=14
+Error while reading cell "sky130_fd_pr__res_bent_nd__example_55959141808769" (byte position 247197698): Unknown layer/datatype in boundary, layer=65 type=14
 Reading "sky130_fd_pr__res_bent_po__example_55959141808768".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808768" (byte position 253379916): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808768" (byte position 247200988): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__inv_1".
 Reading "sky130_fd_io__tap_1".
 Reading "sky130_fd_io__xres4v2_in_buf".
@@ -6044,41 +5540,41 @@ Reading "sky130_fd_io__com_bus_slice_m4".
 Reading "sky130_fd_io__overlay_gpiov2_m4".
 Reading "sky130_fd_io__overlay_gpiov2".
 Reading "sky130_fd_io__res75only_small".
-Error while reading cell "sky130_fd_io__res75only_small" (byte position 258832064): Unknown layer/datatype in boundary, layer=66 type=14
-Error while reading cell "sky130_fd_io__res75only_small" (byte position 258832128): Unknown layer/datatype in boundary, layer=81 type=19
+Error while reading cell "sky130_fd_io__res75only_small" (byte position 252653136): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_io__res75only_small" (byte position 252653200): Unknown layer/datatype in boundary, layer=81 type=19
 Reading "sky130_fd_pr__via_pol1_centered__example_559591418080".
 Reading "sky130_fd_pr__via_l1m1__example_5595914180832".
 Reading "sky130_fd_pr__via_pol1__example_5595914180854".
 Reading "sky130_fd_pr__res_generic_po__example_5595914180856".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180856" (byte position 258834904): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180856" (byte position 252655976): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_generic_po__example_5595914180855".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180855" (byte position 258835470): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180855" (byte position 252656542): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_generic_po__example_5595914180853".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180853" (byte position 258836036): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_5595914180853" (byte position 252657108): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__tk_em1s_cdns_5595914180852".
 Reading "sky130_fd_pr__nfet_01v8__example_5595914180850".
 Reading "sky130_fd_io__gpio_pddrvr_strong_slowv2".
-Error while reading cell "sky130_fd_io__gpio_pddrvr_strong_slowv2" (byte position 258838178): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__gpio_pddrvr_strong_slowv2" (byte position 252659250): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_pr__via_l1m1_centered__example_559591418085".
 Reading "sky130_fd_io__pfet_con_diff_wo_abt_270v2".
-Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270v2" (byte position 259157060): Unknown layer/datatype in boundary, layer=81 type=8
-Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270v2" (byte position 259158852): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270v2" (byte position 252978132): Unknown layer/datatype in boundary, layer=81 type=8
+Error while reading cell "sky130_fd_io__pfet_con_diff_wo_abt_270v2" (byte position 252979924): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__gpio_pudrvr_strongv2".
 Reading "sky130_fd_io__gpio_pddrvr_weakv2".
-Error while reading cell "sky130_fd_io__gpio_pddrvr_weakv2" (byte position 259880632): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__gpio_pddrvr_weakv2" (byte position 253701704): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_pr__hvdfm1sd2__example_55959141808563".
 Reading "sky130_fd_pr__hvdfm1sd__example_55959141808655".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808654".
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808656".
 Reading "sky130_fd_io__com_pudrvr_weakv2".
-Error while reading cell "sky130_fd_io__com_pudrvr_weakv2" (byte position 259951424): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__com_pudrvr_weakv2" (byte position 253772496): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__com_pudrvr_strong_slowv2".
-Error while reading cell "sky130_fd_io__com_pudrvr_strong_slowv2" (byte position 259985576): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__com_pudrvr_strong_slowv2" (byte position 253806648): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_pr__via_l1m1_centered__example_559591418083".
 Reading "sky130_fd_pr__via_l1m1_centered__example_559591418082".
 Reading "sky130_fd_io__nfet_con_diff_wo_abt_270v2".
-Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270v2" (byte position 260069862): Unknown layer/datatype in boundary, layer=81 type=8
-Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270v2" (byte position 260071654): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270v2" (byte position 253890934): Unknown layer/datatype in boundary, layer=81 type=8
+Error while reading cell "sky130_fd_io__nfet_con_diff_wo_abt_270v2" (byte position 253892726): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__gpiov2_pddrvr_strong".
 Reading "sky130_fd_io__gpio_odrvr_subv2".
 Reading "sky130_fd_io__gpio_odrvrv2".
@@ -6145,9 +5641,9 @@ Reading "sky130_fd_io__feascom_pupredrvr_nbiasv2".
 Reading "sky130_fd_pr__via_m1m2__example_55959141808276".
 Reading "sky130_fd_pr__via_pol1__example_55959141808275".
 Reading "sky130_fd_pr__res_generic_po__example_55959141808286".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_55959141808286" (byte position 261883280): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_55959141808286" (byte position 255704352): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_generic_po__example_55959141808285".
-Error while reading cell "sky130_fd_pr__res_generic_po__example_55959141808285" (byte position 261883846): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_generic_po__example_55959141808285" (byte position 255704918): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808283".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808287".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808644".
@@ -6321,7 +5817,7 @@ Reading "sky130_fd_io__hvsbt_nand2v2".
 Reading "sky130_fd_io__gpiov2_ictl_logic".
 CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
 Reading "sky130_fd_io__gpiov2_buf_localesd".
-Error while reading cell "sky130_fd_io__gpiov2_buf_localesd" (byte position 263112568): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__gpiov2_buf_localesd" (byte position 256933640): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_pr__dfl1sd2__example_55959141808518".
 Reading "sky130_fd_pr__dfl1sd__example_55959141808517".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808607".
@@ -6450,7 +5946,7 @@ Reading "sky130_fd_pr__hvdfm1sd2__example_55959141808251".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808560".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808558".
 Reading "sky130_fd_io__amux_switch_1v2b".
-Error while reading cell "sky130_fd_io__amux_switch_1v2b" (byte position 264214878): Unknown layer/datatype in boundary, layer=81 type=6
+Error while reading cell "sky130_fd_io__amux_switch_1v2b" (byte position 258035950): Unknown layer/datatype in boundary, layer=81 type=6
 Reading "sky130_fd_io__gpiov2_amux".
 Reading "sky130_fd_io__top_gpiov2".
 Reading "sky130_ef_io__gpiov2_pad".
@@ -6464,12 +5960,12 @@ Reading "sky130_fd_io__gnd2gnd_diff".
 Reading "sky130_fd_io__gnd2gnd_tap".
 Reading "sky130_fd_io__gnd2gnd_sub_dnwl".
 Reading "sky130_fd_io__gnd2gnd_120x2_lv_isosub".
-Error while reading cell "sky130_fd_io__gnd2gnd_120x2_lv_isosub" (byte position 266791646): Unknown layer/datatype in boundary, layer=81 type=19
+Error while reading cell "sky130_fd_io__gnd2gnd_120x2_lv_isosub" (byte position 260612718): Unknown layer/datatype in boundary, layer=81 type=19
 Reading "sky130_fd_pr__pfet_01v8__example_55959141808687".
 Reading "sky130_fd_pr__res_bent_po__example_55959141808691".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808691" (byte position 266801604): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808691" (byte position 260622676): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_bent_po__example_55959141808690".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808690" (byte position 266803302): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808690" (byte position 260624374): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__dfl1__example_55959141808682".
 Reading "sky130_fd_pr__dftpl1s2__example_55959141808702".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808705".
@@ -6481,15 +5977,15 @@ Reading "sky130_fd_pr__nfet_01v8__example_55959141808698".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808696".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808699".
 Reading "sky130_fd_pr__res_bent_po__example_55959141808688".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808688" (byte position 266865686): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808688" (byte position 260686758): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808695".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808704".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808703".
 Reading "sky130_fd_pr__nfet_01v8__example_55959141808701".
 Reading "sky130_fd_pr__res_bent_po__example_55959141808689".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808689" (byte position 266921924): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808689" (byte position 260742996): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_pr__res_bent_po__example_55959141808692".
-Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808692" (byte position 266923622): Unknown layer/datatype in boundary, layer=66 type=14
+Error while reading cell "sky130_fd_pr__res_bent_po__example_55959141808692" (byte position 260744694): Unknown layer/datatype in boundary, layer=66 type=14
 Reading "sky130_fd_io__top_ground_lvc_wpad".
     100 uses
     200 uses
@@ -6525,9 +6021,3 @@ Reading "chip_io".
     700 uses
     800 uses
 Reading "caravel".
-[INFO]: Loading caravel
-
-[INFO]: Saved
-[INFO]: Saved
-[INFO]: Saved
-[INFO]: Saved

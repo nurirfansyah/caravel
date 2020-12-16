@@ -78,6 +78,7 @@ module top_astria #(
     wire [31:0] rdata; 
     wire [31:0] wdata;
     wire [BITS-1:0] comp32out;
+    wire comp256out;
 
     wire valid;
     wire [3:0] wstrb;
@@ -93,8 +94,9 @@ module top_astria #(
     //wire [1:0] comp256out;
 
     // IO
+    assign io_out = {comp256out,comp32out[30:0]};   // cut 1 out from comp32
 //    assign io_out = {comp256out,comp32out[29:0]};   // cut 2 out from comp32
-    assign io_out = {comp32out[31:0]};   // cut 2 out from comp32
+//    assign io_out = {comp32out[31:0]};   // cut 2 out from comp32
     assign io_oeb = {(`MPRJ_IO_PADS-1){rst}};
 
     // LA
@@ -110,8 +112,8 @@ module top_astria #(
 
 
     stoch_adc_comp #(
-        .BITS(BITS)
-//        .COMP_TOTAL(64)
+        .BITS(BITS),
+        .COMP_TOTAL(64)
     ) stoch_adc_comp(
         .clk(clk),
         .reset(rst),
@@ -124,17 +126,19 @@ module top_astria #(
         .la_input(la_data_in[65:34]),
         .vcomp32_a(analog_io[24]),
         .vcomp32_b(analog_io[25]),
+        .vcomp256_a(analog_io[26]),
+        .vcomp256_b(analog_io[28]),
 //        .vcomp256_a(analog_io[27:26]),
-//        .vcomp256_a(analog_io[29:28]),
-        .comp32out(comp32out)
-//        .comp256out(comp256out)
+//        .vcomp256_b(analog_io[29:28]),
+        .comp32out(comp32out),
+        .comp256out(comp256out)
     );
 
 endmodule
 
 module stoch_adc_comp #(
-    parameter BITS = 32
-//    parameter COMP_TOTAL = 64
+    parameter BITS = 32,
+    parameter COMP_TOTAL = 64
 )(
     input clk,
     input reset,
@@ -145,11 +149,14 @@ module stoch_adc_comp #(
     input [BITS-1:0] la_input,
     input vcomp32_a,
     input vcomp32_b,
+    input vcomp256_a,
+    input vcomp256_b,
 //    input [1:0] vcomp256_a,
 //    input [1:0] vcomp256_b,
     output ready,
     output [BITS-1:0] rdata,
-    output [BITS-1:0] comp32out
+    output [BITS-1:0] comp32out,
+    output comp256out
 //    output [1:0] comp256out
 );
     reg ready;
@@ -157,17 +164,18 @@ module stoch_adc_comp #(
 
     // Comparator output registers
     reg [BITS-1:0] comp32out;    // Bank 1
-//    reg [COMP_TOTAL-1:0] comp256out1_reg; // Bank 2
+    reg [COMP_TOTAL-1:0] comp256out1_reg; // Bank 2
 //    reg [COMP_TOTAL-1:0] comp256out2_reg; // Bank 3
-//    wire [COMP_TOTAL-1:0] comp256out1_wire; // Bank 2
+    wire [COMP_TOTAL-1:0] comp256out1_wire; // Bank 2
 //    wire [COMP_TOTAL-1:0] comp256out2_wire; // Bank 3
 
     // Comparator output shift registers
-//    reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
+ //   reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
  //   reg [COMP_TOTAL-1:0] comp256out2_sreg; // Bank 3
     reg [5:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
 
     // Take output from LSB of comp output shift reg
+    assign comp256out = comp256out1_wire[0];
 //    assign comp256out[0] = comp256out1_sreg[0];
 //    assign comp256out[1] = comp256out2_sreg[0];
 
@@ -185,7 +193,7 @@ module stoch_adc_comp #(
             if (~|la_write) begin
                 // shift outputs
                 counter_comp_sreg <= counter_comp_sreg + 1;
-//                comp256out1_sreg <= {{1'b0},comp256out1_sreg[31:1]};
+//                comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[31:1]};
 //                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
             end
 
@@ -217,8 +225,15 @@ module stoch_adc_comp #(
     genvar j;
     generate 
         for(j=0; j<32; j=j+1) begin
-            synthcomp comp32(clk, vcomp32_a, vcomp32_b, comp32out[j]);
+            synthcomp comp32(.clk(clk), .v_a(vcomp32_a), .v_b(vcomp32_b), .comp_out(comp32out[j])); 
         end
+    endgenerate
+
+    genvar k;
+    generate 
+        for(k=0; k<COMP_TOTAL; k=k+1) begin
+            synthcomp comp256_1(.clk(clk), .v_a(vcomp256_a), .v_b(vcomp256_b), .comp_out(comp256out1_wire[k])); 
+        end    
     endgenerate
 /*
     genvar k;
@@ -246,10 +261,9 @@ endmodule
 Synthesizable analog clocked comparator based on Sky130 NOR4 cells
 
 Similar principle to NAND3 based design reported in:
-[1] S. Weaver, B. Hershberg, and U.-K. Moon, 
-"Digitally Synthesized Stochastic Flash ADC Using Only Standard Digital Cells," 
-IEEE Trans. Circuits Syst. I Regul. Pap., vol. 61, no. 1, pp. 84–91, Jan. 2014, 
-doi: 10.1109/TCSI.2013.2268571.
+[1] S. Weaver, B. Hershberg, and U.K. Moon, 
+"Digitally Synthesized Stochastic Flash ADC Using Only Standard Digital Cells,"
+IEEE Trans. Circuits Syst. I, doi: 10.1109/TCSI.2013.2268571
 -------------------------
 */
 module synthcomp (
@@ -260,10 +274,20 @@ module synthcomp (
 
 wire qa, qb, qx, qcomp_out;
 
-sky130_fd_sc_hd__nor4_1 X_NOR1 (qa, v_a, qb, qb, clk);
-sky130_fd_sc_hd__nor4_1 X_NOR2 (qb, v_b, qa, qa, clk);
-sky130_fd_sc_hd__nor4_1 X_NOR3 (qcomp_out, qa, qa, qx, qx);
-sky130_fd_sc_hd__nor4_1 X_NOR4 (qx, qb, qb, qcomp_out, qcomp_out);
+sky130_fd_sc_hd__nor4_1 X_NOR1 (
+//    `ifdef USE_POWER_PINS
+//        .VPWR(VPWR),
+//        .VGND(VGND),
+//        .VPB(VPWR),
+//        .VNB(VGND),
+//    `endif,
+    .Y(qa), .A(v_a), .B(qb), .C(qb), .D(clk));
+sky130_fd_sc_hd__nor4_1 X_NOR2 (
+    .Y(qb), .A(v_b), .B(qa), .C(qa), .D(clk));
+sky130_fd_sc_hd__nor4_1 X_NOR3 (
+    .Y(qcomp_out), .A(qa), .B(qa), .C(qx), .D(qx));
+sky130_fd_sc_hd__nor4_1 X_NOR4 (
+    .Y(qx), .A(qb), .B(qb), .C(qcomp_out), .D(qcomp_out));
 
 always @(posedge clk)
 begin
