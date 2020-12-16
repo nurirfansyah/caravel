@@ -20,16 +20,22 @@
 This project contains test circuits for stochastic computation, namely the synthesizable comparators for a stochastic ADC, to be submitted for Google SKY130 open MPW shuttle on the Caravel SoC.
 
 Build instructions (assuming Openlane, PDK, set up properly):
+
 0. From main caravel directory:
+
 make uncompress
 
 1. From openlane directory: 
+
 make top_astria
 make user_project_wrapper
 
 2. From main caravel directory:
+
 make ship
+
 (Optional if pushing repo):
+
 make compress 
 
 # CIIC Harness  
