@@ -1,7 +1,10 @@
 FULL RUN LOG:
 SPDX NON-COMPLIANT FILES
+/home/irfansyah/dev/caravel-ELITS/checks/caravel.magic.namelist
+/home/irfansyah/dev/caravel-ELITS/checks/mprj.magic.namelist
+/home/irfansyah/dev/caravel-ELITS/checks/caravel.magic.typelist
+/home/irfansyah/dev/caravel-ELITS/checks/mprj.magic.typelist
 /home/irfansyah/dev/caravel-ELITS/doc/caravel_datasheet.ps
-/home/irfansyah/dev/caravel-ELITS/mag/.magicrc
 /home/irfansyah/dev/caravel-ELITS/mag/clamp_list.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/chip_dimensions.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/default.cvcrc
@@ -317,4 +320,3 @@ SPDX NON-COMPLIANT FILES
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/user_project_wrapper.spice
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/mprj_logic_high.spice
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/mgmt_protect_hv.spice
-/home/irfansyah/dev/caravel-ELITS/maglef/.magicrc

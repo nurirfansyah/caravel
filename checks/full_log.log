@@ -5,26 +5,25 @@ Step 0 done without fatal errors.
 {{LICENSE COMPLIANCE PASSED}} Apache-2.0 LICENSE file was found in project root
  No third party libraries found.
 Step 1 done without fatal errors.
-{{SPDX COMPLIANCE WARNING}} Found 318 non-compliant files with the SPDX Standard. Check full log for more information
-SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/home/irfansyah/dev/caravel-ELITS/doc/caravel_datasheet.ps', '/home/irfansyah/dev/caravel-ELITS/mag/.magicrc', '/home/irfansyah/dev/caravel-ELITS/mag/clamp_list.txt', '/home/irfansyah/dev/caravel-ELITS/openlane/chip_dimensions.txt', '/home/irfansyah/dev/caravel-ELITS/openlane/default.cvcrc', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/config.tcl', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/config.tcl', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/routing/top_astria.spef', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/routing/top_astria.def.ref', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_cts.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_preroute.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_optimized.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__tapvpwrvgnd_1.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__fill_1.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__or4_4.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__and3_4.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__decap_3.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__buf_2.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/.magicrc']
+{{SPDX COMPLIANCE WARNING}} Found 320 non-compliant files with the SPDX Standard. Check full log for more information
+SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/home/irfansyah/dev/caravel-ELITS/checks/caravel.magic.namelist', '/home/irfansyah/dev/caravel-ELITS/checks/mprj.magic.namelist', '/home/irfansyah/dev/caravel-ELITS/checks/caravel.magic.typelist', '/home/irfansyah/dev/caravel-ELITS/checks/mprj.magic.typelist', '/home/irfansyah/dev/caravel-ELITS/doc/caravel_datasheet.ps', '/home/irfansyah/dev/caravel-ELITS/mag/clamp_list.txt', '/home/irfansyah/dev/caravel-ELITS/openlane/chip_dimensions.txt', '/home/irfansyah/dev/caravel-ELITS/openlane/default.cvcrc', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/config.tcl', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/config.tcl', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/routing/top_astria.spef', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/routing/top_astria.def.ref', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_cts.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_preroute.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/synthesis/top_astria.synthesis_optimized.v', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__tapvpwrvgnd_1.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__fill_1.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__or4_4.ext', '/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__and3_4.ext']
  Executing Step 2 of 4: Checking YAML description.
  YAML file valid!
 Step 2 done without fatal errors.
  Executing Step 3 of 4: Executing Fuzzy Consistency Checks.
-b'Going into /home/irfansyah/dev/caravel-ELITS/verilog/rtl'
+b'Going into /home/irfansyah/dev/caravel-ELITS//verilog/rtl'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
-b'Going into /home/irfansyah/dev/caravel-ELITS/maglef'
+b'Going into /home/irfansyah/dev/caravel-ELITS//maglef'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
-b'Going into /home/irfansyah/dev/caravel-ELITS/mag'
+b'Going into /home/irfansyah/dev/caravel-ELITS//mag'
 b'Removing manifest'
 b'Fetching manifest'
 b'Running sha1sum checks'
- Manifest Checks Failed. Please rebase your Repository to the latest Caravel master.
-.magicrc: FAILED
+ Manifest Checks Passed. Caravel Version Matches.
  Documentation Checks Passed.
  Makefile Checks Passed.
 instance caravel found
@@ -34,9 +33,30 @@ Design is complex and contains: 2 modules
 verilog Consistency Checks Passed.
  Basic Hierarchy Checks Passed.
  Running Magic Extractions From GDS...
- Consistency Checks Failed+ Reason: GDS Checks Failed: GDS Hierarchy Check Failed
+user wrapper cell names differences: 
+[]
+user wrapper cell type differences: 
+[]
+toplevel cell names differences: 
+[]
+toplevel cell type differences: 
+[]
+GDS Hierarchy Check Passed
+GDS Checks Passed
+{PROGRESS} Running Pins and Power Checks...
+Pins check passed
+Internal Power Checks Passed!
+ Fuzzy Consistency Checks Passed!
+Step 3 done without fatal errors.
  Executing Step 4 of 4: Checking DRC Violations.
  Running DRC Checks...
- DRC Checks on MAG Passed!
-Step 4 done without fatal errors.
- All Checks PASSED!
+Violation Message "Metal4 > 3um spacing to unrelated m4 < 0.4um (met4.5b) "found 6 Times.
+Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 2 Times.
+Violation Message "Can't overlap those layers "found 2 Times.
+Violation Message "Min area of metal2 holes > 0.14um^2 (met2.7) "found 20 Times.
+Violation Message "Metal3 spacing < 0.3um (met3.2) "found 6 Times.
+Violation Message "Metal3 width < 0.3um (met3.1) "found 1 Times.
+Violation Message "Metal1 > 3um spacing to unrelated m1 < 0.28um (met1.3b) "found 17 Times.
+Violation Message "Metal2 > 3um spacing to unrelated m2 < 0.28um (met2.3b) "found 21 Times.
+ DRC Checks on MAG Failed, Reason: Total # of DRC violations is 75
+TEST FAILED AT STEP 4
