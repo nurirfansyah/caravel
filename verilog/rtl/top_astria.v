@@ -1,3 +1,18 @@
+// SPDX-FileCopyrightText: 2020 Astria Nur Irfansyah
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// SPDX-License-Identifier: Apache-2.0
+
 `default_nettype none
 /*
  *-------------------------------------------------------------
@@ -8,8 +23,8 @@
  * Description:
  * Test circuits containing:
  * 1. Array of synthesized analog comparators for stochastic ADC (3 banks)
- * 2. Support circuits (shift register)
- * 3. LIF Neuron
+ * 2. Support circuits 
+ * 3. LIF Neuron (not implemented in this version)
  *
  * (1) Analog Comparator Bank 1, contains 32 comparators
  *      Name  : comp32
@@ -113,7 +128,7 @@ module top_astria #(
 
     stoch_adc_comp #(
         .BITS(BITS),
-        .COMP_TOTAL(64)
+        .COMP_TOTAL(128)
     ) stoch_adc_comp(
         .clk(clk),
         .reset(rst),
@@ -138,7 +153,7 @@ endmodule
 
 module stoch_adc_comp #(
     parameter BITS = 32,
-    parameter COMP_TOTAL = 64
+    parameter COMP_TOTAL = 128
 )(
     input clk,
     input reset,
@@ -147,10 +162,10 @@ module stoch_adc_comp #(
     input [BITS-1:0] wdata,
     input [BITS-1:0] la_write,
     input [BITS-1:0] la_input,
-    input vcomp32_a,
-    input vcomp32_b,
-    input vcomp256_a,
-    input vcomp256_b,
+    inout vcomp32_a,
+    inout vcomp32_b,
+    inout vcomp256_a,
+    inout vcomp256_b,
 //    input [1:0] vcomp256_a,
 //    input [1:0] vcomp256_b,
     output ready,
@@ -170,12 +185,13 @@ module stoch_adc_comp #(
 //    wire [COMP_TOTAL-1:0] comp256out2_wire; // Bank 3
 
     // Comparator output shift registers
- //   reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
+    reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
  //   reg [COMP_TOTAL-1:0] comp256out2_sreg; // Bank 3
-    reg [5:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
+    reg [6:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
 
     // Take output from LSB of comp output shift reg
-    assign comp256out = comp256out1_wire[0];
+//    assign comp256out = comp256out1_wire[0];
+    assign comp256out = comp256out1_sreg[0];
 //    assign comp256out[0] = comp256out1_sreg[0];
 //    assign comp256out[1] = comp256out2_sreg[0];
 
@@ -193,7 +209,7 @@ module stoch_adc_comp #(
             if (~|la_write) begin
                 // shift outputs
                 counter_comp_sreg <= counter_comp_sreg + 1;
-//                comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[31:1]};
+                comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[COMP_TOTAL-1:1]};
 //                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
             end
 
@@ -206,10 +222,10 @@ module stoch_adc_comp #(
                 if (wstrb[3]) dummy[31:24] <= wdata[31:24];
             end
 
-//            if (counter_comp_sreg == 0) begin
-//                comp256out1_sreg <= comp256out1_reg;
+            if (counter_comp_sreg == 0) begin
+                comp256out1_sreg <= comp256out1_reg;
 //                comp256out2_sreg <= comp256out2_reg;
-//            end
+            end
         end
     end
 /*
@@ -268,8 +284,8 @@ IEEE Trans. Circuits Syst. I, doi: 10.1109/TCSI.2013.2268571
 */
 module synthcomp (
     input clk,
-    input v_a,
-    input v_b,
+    inout v_a,
+    inout v_b,
     output reg comp_out);
 
 wire qa, qb, qx, qcomp_out;

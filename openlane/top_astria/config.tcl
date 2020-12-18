@@ -18,9 +18,9 @@ set ::env(DESIGN_IS_CORE) 0
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
 set ::env(DIODE_INSERTION_STRATEGY) 3
 set ::env(GLB_RT_MAXLAYER) 5
-set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
+set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 1
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_BASIC_PLACEMENT) 1
-#set ::env(PL_TARGET_DENSITY) 0.1
+#set ::env(PL_TARGET_DENSITY) 0.15
