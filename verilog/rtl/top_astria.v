@@ -18,7 +18,7 @@
  *-------------------------------------------------------------
  *
  * top_astria.v
- * (adapted from user_proj_example from caravel repo)
+ * (adapted from user_proj_example from  caravel repo)
  *
  * Description:
  * Test circuits containing:
@@ -187,7 +187,7 @@ module stoch_adc_comp #(
     // Comparator output shift registers
     reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
  //   reg [COMP_TOTAL-1:0] comp256out2_sreg; // Bank 3
-    reg [6:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
+    reg [7:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
 
     // Take output from LSB of comp output shift reg
 //    assign comp256out = comp256out1_wire[0];
@@ -209,7 +209,6 @@ module stoch_adc_comp #(
             if (~|la_write) begin
                 // shift outputs
                 counter_comp_sreg <= counter_comp_sreg + 1;
-                comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[COMP_TOTAL-1:1]};
 //                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
             end
 
@@ -225,6 +224,9 @@ module stoch_adc_comp #(
             if (counter_comp_sreg == 0) begin
                 comp256out1_sreg <= comp256out1_reg;
 //                comp256out2_sreg <= comp256out2_reg;
+            end 
+            else begin
+                comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[COMP_TOTAL-1:1]};
             end
         end
     end

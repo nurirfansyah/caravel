@@ -187,7 +187,7 @@ module stoch_adc_comp #(
     // Comparator output shift registers
     reg [COMP_TOTAL-1:0] comp256out1_sreg; // Bank 2
  //   reg [COMP_TOTAL-1:0] comp256out2_sreg; // Bank 3
-    reg [6:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
+    reg [7:0] counter_comp_sreg;        // don't forget to adjust according to COMP_TOTAL
 
     // Take output from LSB of comp output shift reg
 //    assign comp256out = comp256out1_wire[0];
@@ -207,6 +207,7 @@ module stoch_adc_comp #(
             ready <= 1'b0;
             
             if (~|la_write) begin
+                // shift outputs
                 counter_comp_sreg <= counter_comp_sreg + 1;
 //                comp256out2_sreg <= {{1'b0},comp256out2_sreg[31:1]};
             end
@@ -223,11 +224,9 @@ module stoch_adc_comp #(
             if (counter_comp_sreg == 0) begin
                 comp256out1_sreg <= comp256out1_reg;
 //                comp256out2_sreg <= comp256out2_reg;
-            end
+            end 
             else begin
-                // shift outputs
                 comp256out1_sreg <= {comp256out1_sreg[0],comp256out1_sreg[COMP_TOTAL-1:1]};
-                
             end
         end
     end
@@ -314,5 +313,93 @@ begin
 end
 
 endmodule
+
+///////////////////////////////////////////////////
+
+// Digital Leaky Integrate & Fire Neuron
+
+//////////////////////////////////////////////////
+module lifNeuron(
+    input clk,
+    input rst,
+    input [31:0] In,
+    input inhibit,
+    output reg signed [31:0] vout= 0,
+    output reg spike= 0
+    );
+    
+reg signed [31:0] v= 0;
+reg signed [31:0] vth= 32'h0000F000;
+reg signed [31:0] add= 0;
+reg signed [31:0] m1= 0;
+reg signed [31:0] add1= 0;
+reg signed [31:0] mul= 0;
+
+always @(posedge clk)
+begin
+    if(rst)
+    begin
+        v<= 0;
+        mul<= 0;
+        add<= 0;
+        add1<= 0;
+        vout<= 0;
+        m1<= 0;
+        spike<= 1'b0;
+    end
+    else if(!rst)
+    begin
+        if(inhibit)
+        begin
+            if(add1[31])
+            begin
+                v<= add1-{add1[31],1'b1,add1[30:1]};
+                vout<= add1-{add1[31],1'b1,add1[30:1]};
+            end
+            else if(!add1[31])
+            begin
+                v<= add1-{add1[31],1'b0,add1[30:1]};
+                vout<= add1-{add1[31],1'b0,add1[30:1]};                
+            end
+            v <= 0;
+            vout <=0;
+            spike<= 1'b0;
+        end
+        else if(!inhibit)
+        begin
+            if(add1> vth)
+            begin
+                m1<= 32'h00000000;
+                v<= 32'h00000000;
+                vout<= 32'h00000000;
+                add1<= 32'h00000000;
+                add<= 32'h00000000;
+                mul<= 32'h00000000;
+                spike<= 1'b1;
+            end
+            else if(add1<= vth)
+            begin
+                m1<= In;
+
+                add<= m1-v;
+                if(add[31])
+                begin
+                    mul<= {add[31],5'b11111,add[30:5]};    
+                end
+                else if(!add[31])
+                begin
+                    mul<= {add[31],5'b00000,add[30:5]};
+                end     
+                add1<= v+mul;
+                v<= add1;
+                vout<= add1;
+                spike<= 1'b0;
+            end
+        end
+    end
+end
+
+endmodule
+
 
 `default_nettype wire
