@@ -1,5 +1,5 @@
 
-Magic 8.3 revision 93 - Compiled on Thu Dec 17 04:58:58 UTC 2020.
+Magic 8.3 revision 99 - Compiled on Fri Dec 18 19:13:56 UTC 2020.
 Starting magic under Tcl interpreter
 Using the terminal as the console.
 Using NULL graphics device.
@@ -1983,36 +1983,36 @@ Reading "storage".
     4700 uses
     4800 uses
     4900 uses
-Reading "sky130_fd_sc_hd__buf_8".
-Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 14669776): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkbuf_16".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 14678666): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 14669780): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__buf_8".
+Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 14682506): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkbuf_1".
 Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 14691396): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__and4_4".
 Error while reading cell "sky130_fd_sc_hd__and4_4" (byte position 14695202): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__o21a_4".
-Error while reading cell "sky130_fd_sc_hd__o21a_4" (byte position 14702648): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__nand2_4".
-Error while reading cell "sky130_fd_sc_hd__nand2_4" (byte position 14710628): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or2_4".
-Error while reading cell "sky130_fd_sc_hd__or2_4" (byte position 14718264): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or4_4".
-Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 14724020): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_4".
-Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 14731320): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a211o_4".
-Error while reading cell "sky130_fd_sc_hd__a211o_4" (byte position 14736724): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__and3_4".
-Error while reading cell "sky130_fd_sc_hd__and3_4" (byte position 14745840): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__nor2_4".
-Error while reading cell "sky130_fd_sc_hd__nor2_4" (byte position 14752732): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__o22a_4".
-Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 14759834): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 14702646): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__o21a_4".
+Error while reading cell "sky130_fd_sc_hd__o21a_4" (byte position 14708050): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__or3_4".
-Error while reading cell "sky130_fd_sc_hd__or3_4" (byte position 14769514): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__or3_4" (byte position 14716028): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__nand2_4".
+Error while reading cell "sky130_fd_sc_hd__nand2_4" (byte position 14723142): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__or2_4".
+Error while reading cell "sky130_fd_sc_hd__or2_4" (byte position 14730778): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a21oi_4".
-Error while reading cell "sky130_fd_sc_hd__a21oi_4" (byte position 14776628): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__a21oi_4" (byte position 14736536): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__or4_4".
+Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 14745124): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__a211o_4".
+Error while reading cell "sky130_fd_sc_hd__a211o_4" (byte position 14752426): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__and3_4".
+Error while reading cell "sky130_fd_sc_hd__and3_4" (byte position 14761542): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__nor2_4".
+Error while reading cell "sky130_fd_sc_hd__nor2_4" (byte position 14768434): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__o22a_4".
+Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 14775536): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__a2bb2o_4".
 Error while reading cell "sky130_fd_sc_hd__a2bb2o_4" (byte position 14785220): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dfxtp_4".
@@ -7423,7 +7423,6 @@ Reading "top_astria".
     130600 uses
     130700 uses
     130800 uses
-    130900 uses
 Reading "user_project_wrapper".
 Reading "caravel".
 [INFO]: Loading caravel

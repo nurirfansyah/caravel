@@ -18,7 +18,7 @@
  *-------------------------------------------------------------
  *
  * top_astria.v
- * (adapted from user_proj_example from  caravel repo)
+ * (adapted from user_proj_example from caravel repo)
  *
  * Description:
  * Test circuits containing:

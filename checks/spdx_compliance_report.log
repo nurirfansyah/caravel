@@ -5,6 +5,7 @@ SPDX NON-COMPLIANT FILES
 /home/irfansyah/dev/caravel-ELITS/checks/caravel.magic.typelist
 /home/irfansyah/dev/caravel-ELITS/checks/mprj.magic.typelist
 /home/irfansyah/dev/caravel-ELITS/doc/caravel_datasheet.ps
+/home/irfansyah/dev/caravel-ELITS/mag/.magicrc
 /home/irfansyah/dev/caravel-ELITS/mag/clamp_list.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/chip_dimensions.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/default.cvcrc
@@ -50,10 +51,6 @@ SPDX NON-COMPLIANT FILES
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__fill_2.ext
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__decap_12.ext
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/magic/sky130_fd_sc_hd__nand2_4.ext
-/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/cvc/top_astria.power
-/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/cvc/cvc_top_astria.debug
-/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/cvc/top_astria.cdl
-/home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/cvc/cvc_top_astria.error
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/lvs/top_astria.lvs.powered.v
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/results/lvs/top_astria.lvs.json
 /home/irfansyah/dev/caravel-ELITS/openlane/top_astria/runs/top_astria/reports/runtime.txt
@@ -172,8 +169,6 @@ SPDX NON-COMPLIANT FILES
 /home/irfansyah/dev/caravel-ELITS/openlane/user_project_wrapper/runs/user_project_wrapper/logs/placement/opendp_runtime.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/user_project_wrapper/runs/user_project_wrapper/logs/placement/replace_runtime.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/user_project_wrapper/runs/user_project_wrapper/logs/synthesis/yosys_runtime.txt
-/home/irfansyah/dev/caravel-ELITS/openlane/user_project_wrapper/runs/user_project_wrapper/logs/magic/magic_ext2spice.antenna.feedback.txt
-/home/irfansyah/dev/caravel-ELITS/openlane/user_project_wrapper/runs/user_project_wrapper/logs/magic/magic_ext2spice.feedback.txt
 /home/irfansyah/dev/caravel-ELITS/openlane/user_proj_example/runs/user_proj_example/config.tcl
 /home/irfansyah/dev/caravel-ELITS/openlane/user_proj_example/runs/user_proj_example/results/routing/user_proj_example.def.ref
 /home/irfansyah/dev/caravel-ELITS/openlane/user_proj_example/runs/user_proj_example/results/routing/user_proj_example.spef
@@ -320,3 +315,4 @@ SPDX NON-COMPLIANT FILES
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/user_project_wrapper.spice
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/mprj_logic_high.spice
 /home/irfansyah/dev/caravel-ELITS/spi/lvs/mgmt_protect_hv.spice
+/home/irfansyah/dev/caravel-ELITS/maglef/.magicrc
