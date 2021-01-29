@@ -14,9 +14,10 @@ set ::env(CLOCK_PERIOD) "20"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 1400 1200"
+set ::env(GLB_RT_OBS) "met5 0 0 1400 1200"
 set ::env(DESIGN_IS_CORE) 0
 set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(DIODE_INSERTION_STRATEGY) 3
+set ::env(DIODE_INSERTION_STRATEGY) 1
 set ::env(GLB_RT_MAXLAYER) 5
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 1
 
