@@ -1,13 +1,13 @@
 --- 
 project: 
-  description: "A template SoC for Google sponsored Open MPW shuttles for SKY130."
+  description: "This project contains test circuits for consisting of synthesizable comparators for a stochastic ADC, to be submitted for Google SKY130 open MPW shuttle on the Caravel SoC.."
   foundry: "SkyWater"
-  git_url: "https://github.com/efabless/caravel.git"
-  organization: "Efabless"
-  organization_url: "http://efabless.com"
-  owner: "Tim Edwards"
+  git_url: "https://github.com/nurirfansyah/caravel_astria_testchip/caravel.git"
+  organization: "Institut Teknologi Sepuluh Nopember"
+  organization_url: "http://www.its.ac.id"
+  owner: "Astria Nur Irfansyah"
   process: "SKY130"
-  project_name: "Caravel"
+  project_name: "Caravel_Astria_Testchip"
   tags: 
     - "Open MPW"
     - "Test Harness"
@@ -15,4 +15,4 @@ project:
   top_level_netlist: "verilog/gl/caravel.v"
   user_level_netlist: "verilog/gl/user_project_wrapper.v"
   version: "1.00"
-  cover_image: "doc/ciic_harness.png"
+  cover_image: "doc/chip_pic_astria_testchip.png"
