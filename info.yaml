@@ -2,7 +2,7 @@
 project: 
   description: "Test circuits consisting of synthesizable comparators for a stochastic ADC, to be submitted for Google SKY130 open MPW shuttle on the Caravel SoC."
   foundry: "SkyWater"
-  git_url: "https://github.com/nurirfansyah/caravel_astria_testchip/caravel.git"
+  git_url: "https://github.com/nurirfansyah/caravel_astria_testchip.git"
   organization: "Institut Teknologi Sepuluh Nopember"
   organization_url: "http://www.its.ac.id"
   owner: "Astria Nur Irfansyah"
